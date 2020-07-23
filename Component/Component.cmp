@@ -1,4 +1,4 @@
-<aura:component controller="LC_NewSiretCtrl" implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base">
+<aura:component controller="Component_Helper" implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base">
 
 
 
