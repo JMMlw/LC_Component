@@ -1,0 +1,25 @@
+<aura:component controller="LC_NewSiretCtrl" implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base">
+
+
+
+    <aura:handler name="init"
+                  value="{!this}"
+                  action="{!c.doInit}" />
+
+    <aura:handler name="loading"
+                  event="c:loading"
+                  action="{!c.spinnerShow}"/>
+
+    <aura:handler name="loadingDone"
+                  event="c:loadingDone"
+                  action="{!c.spinnerHide}"/>
+
+
+    <div aura:id="modalspinner"
+         class="slds-align_absolute-center slds-hide">
+        <lightning:spinner variant="brand" size="large" alternativeText="Chargement"/>
+    </div>
+
+
+	
+</aura:component>

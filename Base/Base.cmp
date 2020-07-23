@@ -1,0 +1,10 @@
+<aura:component abstract="True">
+    
+     <aura:registerEvent name="loading" 
+                        type="c:loading"/>
+    
+    <aura:registerEvent name="loadingDone" 
+                        type="c:loadingDone"/>
+    
+	{! v.body}
+</aura:component>
