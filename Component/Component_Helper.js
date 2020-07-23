@@ -2,13 +2,14 @@
     doInit : function(component, event, helper) {
         // DO SOME
         
+        // CALL APEX METHOD
         this.callServer(component,
-            "c.isCadreR2Fige",
+            "c.methodName",
             function(response){
                 console.log('response : ' + response);
             },
             {
-                opportunityId : oppId
+                param1 : 'param', param2 : 1+1
             }
         )
     }
